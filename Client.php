@@ -6,10 +6,21 @@
  * Date: 26.06.17
  * Time: 17:18
  */
+
+/**
+ * Class Client
+ * -ид номер
+ * -име
+ * -кола
+ * -ремонти масив
+ *
+ */
 class Client
 {
 
     private static $lastid;
+
+    private $carRepairs = [];
 
     private $id;
     private $clientName;
@@ -29,7 +40,17 @@ class Client
     public function setClientName($clientName)
     {
         $this->clientName = $clientName;
+
     }
+
+    /**
+     * @return mixed
+     */
+    public function getClientName()
+    {
+        return $this->clientName;
+    }
+
 
 
 
